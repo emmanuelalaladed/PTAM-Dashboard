@@ -397,6 +397,7 @@ def create_network_figure(G, pos, color_map, all_actors, top_3_actors, visible_a
 app = dash.Dash(__name__, external_stylesheets=[
     'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap'
 ])
+server = app.server
 
 app.title = "IoT Privacy Threat Analysis Dashboard"
 
@@ -551,3 +552,4 @@ if __name__ == '__main__':
     print(f"\n🎉 Enhanced Dashboard ready with {len(all_datasets)} datasets!")
     print("🚀 Starting optimized dashboard server...")
     app.run(debug=True)
+
